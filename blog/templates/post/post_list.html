@@ -1,10 +1,9 @@
 
-
-
-
-
+<h1>Our Blog</h1>
+<a href="{% url 'blog:new_post' %}">new post</a>
+<hr>
 {% for post in posts %}
 
-    <h1><a href="{% url 'blog:post_detail' post.id %}">{{post}}</a> </h1>
+    <h3><a href="{% url 'blog:post_detail' post.id %}">{{post}}</a> </h3>
 
 {% endfor %}
