@@ -8,7 +8,7 @@ from  .models import post ,Category
 class postAdmin(admin.ModelAdmin):
     list_dialects=['id','title','category']
     search_fields= ['title','content']
-    #date_hierarchy ='publish_date'
+    date_hierarchy ='publish_date'
 
 
 
