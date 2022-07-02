@@ -1,0 +1,17 @@
+
+
+
+
+
+<h1><a href="/blog/cbv">Our Blog</a></h1>
+<hr>
+<h1>{{post}}</h1>
+
+<a href="{% url 'blog:edit_post' post.id %}">Edit_post</a>
+<a href="{% url 'blog:cbv_post_Delete' post.id %}">Delete_Post</a>
+
+<hr>
+
+<p>{{post.publish_date}}</p>
+
+<p>{{post.content}}</p>
